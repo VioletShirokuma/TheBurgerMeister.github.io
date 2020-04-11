@@ -1,0 +1,30 @@
+{
+  "name": "theburgermeister.github.io",
+  "version": "1.0.0",
+  "description": "Burger Log Assginment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VioletShirokuma/TheBurgerMeister.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VioletShirokuma/TheBurgerMeister.github.io/issues"
+  },
+  "homepage": "https://github.com/VioletShirokuma/TheBurgerMeister.github.io#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6"
+  },
+  "devDependencies": {}
+}
