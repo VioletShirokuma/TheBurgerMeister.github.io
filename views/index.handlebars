@@ -1,0 +1,43 @@
+<div class="main">
+    <img class="burgerImg" src="/images/burger.png" alt="burger">
+</div>
+
+
+
+<h1>Burger Meister</h1>
+<ul class="burgerList animated rollIn">
+    {{#each burger}}
+    {{#unless this.dataValues.devoured}}
+    <li>
+        <P>{{this.dataValues.id}}. {{this.dataValues.burger_name}} </P>
+
+
+        <button type="button" class="devour" id="devour" 
+        data-name="{{this.dataValues.id}}" data-newState="1">Devour</button>
+    </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<ul class="devouredList animated fadeInLeft">
+        {{#each burger}}
+        {{#if this.dataValues.devoured}}
+        <li>
+            
+      <span>{{this.dataValues.id}}.</span>{{this.dataValues.burger_name}}
+           <button type="button" class="destroy" id="destroy" data-id="{{this.dataValues.id}}">DELETE!</button>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+
+
+    <form class="create-form">
+        <div class="form-group">
+            <label for="bu"></label>
+            <textarea type="text" id="bu" name="burger_name" placeholder="Enter a Burger!">
+    </textarea>
+        </div>
+    </form>
+    <button class="add" type="click">SUBMIT</button>
+    <h4 class="toDo">ENTER BURGER NAME</h4>
